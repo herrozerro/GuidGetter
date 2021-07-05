@@ -1,4 +1,4 @@
-# GuidPaster
+# Guid Getter
 
 Icon from Game-Icons.net
 
