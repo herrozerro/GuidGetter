@@ -8,7 +8,7 @@ using System.Windows;
 using Hardcodet.Wpf.TaskbarNotification;
 using Indieteur.GlobalHooks;
 
-namespace GuidPaster
+namespace GuidGetter
 {
     /// <summary>
     /// Interaction logic for App.xaml
@@ -23,10 +23,6 @@ namespace GuidPaster
             GlobalKeyHook = new GlobalKeyHook();
             GlobalKeyHook.OnKeyDown += OpenGuidGenerator;
 
-            //TaskbarIcon tbi = new TaskbarIcon();
-            //tbi.Icon = new System.Drawing.Icon("./Icons/Hammer.ico");
-            //tbi.ToolTipText = "hello world";
-
             Taskbar window = new Taskbar();
             window.ShowInTaskbar = false;
             window.Show();
@@ -34,7 +30,7 @@ namespace GuidPaster
 
         private static void OpenGuidGenerator(object sender, GlobalKeyEventArgs e)
         {
-            if (e.Control != ModifierKeySide.None && e.Alt != ModifierKeySide.None && e.KeyCode == VirtualKeycodes.Q)
+            if (e.Control != ModifierKeySide.None && e.Alt != ModifierKeySide.None && e.KeyCode == VirtualKeycodes.G)
             {
                 if (wndGuidGenerator == null)
                 {
