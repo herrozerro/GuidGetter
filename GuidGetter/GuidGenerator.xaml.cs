@@ -35,5 +35,11 @@ namespace GuidGetter
         {
             Clipboard.SetText(txtGuid.Text);
         }
+
+        private void btnBlankGuid_Click(object sender, RoutedEventArgs e)
+        {
+            txtGuid.Text = Guid.Empty.ToString();
+            Clipboard.SetText(txtGuid.Text);
+        }
     }
 }

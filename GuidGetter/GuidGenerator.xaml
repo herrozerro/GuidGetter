@@ -8,8 +8,9 @@
         Title="Guid Getter" Height="109" Width="346" Topmost="True" ResizeMode="NoResize" Icon="/Icons/rolling-dices.png">
     <Grid>
         <TextBox x:Name="txtGuid" Margin="0,9,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Center" Width="300" TextAlignment="Center"/>
-        <Button x:Name="btnGetGuid" Content="Get Guid" HorizontalAlignment="Left" Margin="50,32,0,0" VerticalAlignment="Top" Width="118" Click="btnGetGuid_Click"/>
-        <Button x:Name="btnCopyGuid" Content="Copy Guid" Margin="178,32,0,0" VerticalAlignment="Top" Click="btnCopyGuid_Click" HorizontalAlignment="Left" Width="118"/>
+        <Button x:Name="btnGetGuid" Content="Get Guid" HorizontalAlignment="Right" Margin="0,32,233,0" VerticalAlignment="Top" Width="90" Click="btnGetGuid_Click"/>
+        <Button x:Name="btnCopyGuid" Content="Copy Guid" Margin="0,32,0,0" VerticalAlignment="Top" Click="btnCopyGuid_Click" HorizontalAlignment="Center" Width="90"/>
+        <Button x:Name="btnBlankGuid" Content="Blank Guid" Margin="233,32,0,0" VerticalAlignment="Top" Click="btnBlankGuid_Click" HorizontalAlignment="Left" Width="90"/>
 
     </Grid>
 </Window>
