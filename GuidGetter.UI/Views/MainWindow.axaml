@@ -1,0 +1,28 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:GuidGetter.UI.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="GuidGetter.UI.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Title="Guid Getter" 
+        Height="109" 
+        Width="346" 
+        Topmost="True" 
+        CanResize="False" 
+        Icon="/Assets/rolling-dices.ico">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+    <Grid>
+        <TextBlock x:Name="TxtGuid"  Margin="0,9,0,0" Text="Click" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Center" Width="300" TextAlignment="Center"/>
+        <Button x:Name="BtnGetGuid" Content="Get Guid" HorizontalAlignment="Right" Margin="0,32,233,0" VerticalAlignment="Top" Width="90" Click="BtnGetGuid_OnClicktnGetGuid_Click"/>
+        <Button x:Name="BtnCopyGuid" Content="Copy Guid" Margin="0,32,0,0" VerticalAlignment="Top" Click="BtnCopyGuid_OnClicktnCopyGuid_Click" HorizontalAlignment="Center" Width="90"/>
+        <Button x:Name="BtnBlankGuid" Content="Blank Guid" Margin="233,32,0,0" VerticalAlignment="Top" Click="BtnBlankGuid_OnClicknBlankGuid_Click" HorizontalAlignment="Left" Width="90"/>
+    </Grid>
+</Window>
