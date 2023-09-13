@@ -8,11 +8,16 @@ namespace GuidGetter.UI;
 
 public partial class App : Application
 {
+    public App()
+    {
+        DataContext = new ApplicationViewModel();
+    }
+    
     public override void Initialize()
     {
         AvaloniaXamlLoader.Load(this);
     }
-
+    
     public override void OnFrameworkInitializationCompleted()
     {
         if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
@@ -22,9 +27,7 @@ public partial class App : Application
                 DataContext = new MainWindowViewModel(),
             };
         }
-
-        var mw = new MainWindow();
-
+        
         base.OnFrameworkInitializationCompleted();
     }
 }

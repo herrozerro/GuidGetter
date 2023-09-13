@@ -3,6 +3,7 @@ using System.Reactive;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.ReactiveUI;
+using GuidGetter.UI.Views;
 using ReactiveUI;
 
 namespace GuidGetter.UI.ViewModels;
@@ -21,10 +22,22 @@ public class ApplicationViewModel : ViewModelBase
             }
         });
 
-        ToggleCommand = ReactiveCommand.Create(() => { Console.WriteLine("Test3"); });
+        OpenCommand = ReactiveCommand.Create(() =>
+        {
+            if (Application.Current?.ApplicationLifetime is not IClassicDesktopStyleApplicationLifetime
+                {
+                    MainWindow.IsVisible: false
+                } desktop) return;
+            
+            desktop.MainWindow = new MainWindow
+            {
+                DataContext = new MainWindowViewModel(),
+            };
+            desktop.MainWindow.Show();
+        });
     }
 
     public ReactiveCommand<Unit,Unit> ExitCommand { get; }
 
-    public ReactiveCommand<Unit,Unit> ToggleCommand { get; }
+    public ReactiveCommand<Unit,Unit> OpenCommand { get; }
 }

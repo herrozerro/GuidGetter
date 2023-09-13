@@ -11,24 +11,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c36acb8-13b7-4cb1-bd96-f4de560daa18" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/GuidGetter.UI/App.axaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GuidGetter.UI/App.axaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GuidGetter.UI/Assets/avalonia-logo.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GuidGetter.UI/Assets/rolling-dices.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GuidGetter.UI/Assets/rolling-dices.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GuidGetter.UI/GuidGetter.UI.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GuidGetter.UI/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GuidGetter.UI/ViewLocator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GuidGetter.UI/ViewModels/ApplicationViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GuidGetter.UI/ViewModels/MainWindowViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GuidGetter.UI/ViewModels/ViewModelBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GuidGetter.UI/Views/MainWindow.axaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GuidGetter.UI/Views/MainWindow.axaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GuidGetter.UI/app.manifest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/global.json" afterDir="false" />
+    <list default="true" id="7c36acb8-13b7-4cb1-bd96-f4de560daa18" name="Changes" comment="Added Avalonia UI">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GuidGetter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GuidGetter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GuidGetter.sln" beforeDir="false" afterPath="$PROJECT_DIR$/GuidGetter.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GuidGetter.UI/App.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/GuidGetter.UI/App.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GuidGetter.UI/App.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GuidGetter.UI/App.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GuidGetter.UI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GuidGetter.UI/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GuidGetter.UI/ViewModels/ApplicationViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GuidGetter.UI/ViewModels/ApplicationViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GuidGetter.UI/ViewModels/MainWindowViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GuidGetter.UI/ViewModels/MainWindowViewModel.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +31,20 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "herrozerro"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="bc51444c-e4d9-44d2-9047-ed627dd2ca61" />
+        <option name="url" value="https://github.com/herrozerro/GuidGetter.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4081939150374df08a07a87a6d2002911ac800/b7/b7e07258/IClipboard.cs" root0="SKIP_HIGHLIGHTING" />
@@ -67,6 +70,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "XThreadsFramesViewSplitterKey": "0.41093475",
     "git-widget-placeholder": "feature/AvaloniaUI",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -184,8 +188,17 @@
       <workItem from="1694437184118" duration="113000" />
       <workItem from="1694437370160" duration="181000" />
       <workItem from="1694455962016" duration="11751000" />
-      <workItem from="1694604062760" duration="1348000" />
+      <workItem from="1694604062760" duration="7478000" />
     </task>
+    <task id="LOCAL-00001" summary="Added Avalonia UI">
+      <option name="closed" value="true" />
+      <created>1694605433203</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1694605433203</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,24 +209,7 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/GuidGetter.UI/ViewModels/ApplicationViewModel.cs</url>
-          <line>16</line>
-          <properties documentPath="$PROJECT_DIR$/GuidGetter.UI/ViewModels/ApplicationViewModel.cs" initialLine="16" containingFunctionPresentation="Lambda expression inside Constructor 'ApplicationViewModel'">
-            <startOffsets>
-              <option value="386" />
-            </startOffsets>
-            <endOffsets>
-              <option value="483" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Added Avalonia UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Avalonia UI" />
   </component>
 </project>

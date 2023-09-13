@@ -20,16 +20,7 @@
              <TrayIcon Icon="/Assets/rolling-dices.ico" ToolTipText="Avalonia Tray Icon ToolTip">
                  <TrayIcon.Menu>
                      <NativeMenu>
-                         <NativeMenuItem Header="Settings">
-                             <NativeMenu>
-                                 <NativeMenuItem Header="Option 1" ToggleType="Radio" IsChecked="True" Command="{Binding ToggleCommand}" />
-                                 <NativeMenuItem Header="Option 2" ToggleType="Radio" IsChecked="True" Command="{Binding ToggleCommand}" />
-                                 <NativeMenuItemSeparator />
-                                 <NativeMenuItem Header="Option 3" ToggleType="CheckBox" IsChecked="True" Command="{Binding ToggleCommand}" />
-                                 <NativeMenuItem Icon="/Assets/rolling-dices.ico" Header="Restore Defaults" Command="{Binding ToggleCommand}" />
-                                 <NativeMenuItem Header="Disabled option" IsEnabled="False" />
-                             </NativeMenu>
-                         </NativeMenuItem>
+                         <NativeMenuItem Header="Open" Command="{Binding OpenCommand}" />
                          <NativeMenuItem Header="Exit" Command="{Binding ExitCommand}" />
                      </NativeMenu>
                  </TrayIcon.Menu>
